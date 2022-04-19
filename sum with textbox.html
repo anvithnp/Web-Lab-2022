@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Addition of 2 numbers using html text boxes</h1>
+    <script>
+        function add_number(){
+            let first_number = parseInt(document.getElementById("first number").value)
+            let second_number = parseInt(document.getElementById("second number").value)
+            let result = first_number+second_number
+            document.write(result)
+        }
+    </script>
+    <form>
+        <label for="c1">First number</label><br>
+        <input type="text" id="first number" name="First integer"><br>
+        <label for="c2">Second number</label><br>
+        <input type="text" id="second number" name="second integer"><br><br>
+        <input type="button" name="SUBMIT" onclick="add_number()" value="SUBMIT"> 
+    </form>
+    
+</body>
+</html>
